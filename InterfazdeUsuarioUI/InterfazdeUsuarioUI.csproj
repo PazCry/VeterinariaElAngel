@@ -1,0 +1,363 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B0BC353A-A221-41D2-86D6-FAEDED462567}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>InterfazdeUsuarioUI</RootNamespace>
+    <AssemblyName>InterfazdeUsuarioUI</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ELANGELBDDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ELANGELBDDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ELANGELBDDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ELANGELBDDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ELANGELBDDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ELANGELBDDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ELANGELBDDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ELANGELBDDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ELANGELBDDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ELANGELBDDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ELANGELBDDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ELANGELBDDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="InicioAdministrador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InicioAdministrador.Designer.cs">
+      <DependentUpon>InicioAdministrador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CRUDCita.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRUDCita.Designer.cs">
+      <DependentUpon>CRUDCita.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CRUDCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRUDCliente.Designer.cs">
+      <DependentUpon>CRUDCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CRUDEspecie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRUDEspecie.Designer.cs">
+      <DependentUpon>CRUDEspecie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CRUDMascota.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRUDMascota.Designer.cs">
+      <DependentUpon>CRUDMascota.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CRUDRaza.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRUDRaza.Designer.cs">
+      <DependentUpon>CRUDRaza.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CRUDRegistro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRUDRegistro.Designer.cs">
+      <DependentUpon>CRUDRegistro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CRUDRol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRUDRol.Designer.cs">
+      <DependentUpon>CRUDRol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CRUDSexo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRUDSexo.Designer.cs">
+      <DependentUpon>CRUDSexo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CRUDUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRUDUsuario.Designer.cs">
+      <DependentUpon>CRUDUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ELANGELBDDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ELANGELBDDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ELANGELBDDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ELANGELBDDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="InicioVeterinaria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InicioVeterinaria.Designer.cs">
+      <DependentUpon>InicioVeterinaria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="InicioSecretaria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InicioSecretaria.Designer.cs">
+      <DependentUpon>InicioSecretaria.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="InicioAdministrador.resx">
+      <DependentUpon>InicioAdministrador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRUDCita.resx">
+      <DependentUpon>CRUDCita.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRUDCliente.resx">
+      <DependentUpon>CRUDCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRUDEspecie.resx">
+      <DependentUpon>CRUDEspecie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRUDMascota.resx">
+      <DependentUpon>CRUDMascota.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRUDRaza.resx">
+      <DependentUpon>CRUDRaza.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRUDRegistro.resx">
+      <DependentUpon>CRUDRegistro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRUDRol.resx">
+      <DependentUpon>CRUDRol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRUDSexo.resx">
+      <DependentUpon>CRUDSexo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRUDUsuario.resx">
+      <DependentUpon>CRUDUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InicioVeterinaria.resx">
+      <DependentUpon>InicioVeterinaria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="InicioSecretaria.resx">
+      <DependentUpon>InicioSecretaria.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="ELANGELBDDataSet.xsc">
+      <DependentUpon>ELANGELBDDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ELANGELBDDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ELANGELBDDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ELANGELBDDataSet.xss">
+      <DependentUpon>ELANGELBDDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ELANGELBDDataSet1.xsc">
+      <DependentUpon>ELANGELBDDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="ELANGELBDDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ELANGELBDDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ELANGELBDDataSet1.xss">
+      <DependentUpon>ELANGELBDDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="ELANGELBDDataSet2.xsc">
+      <DependentUpon>ELANGELBDDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="ELANGELBDDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ELANGELBDDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ELANGELBDDataSet2.xss">
+      <DependentUpon>ELANGELBDDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="ELANGELBDDataSet3.xsc">
+      <DependentUpon>ELANGELBDDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="ELANGELBDDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ELANGELBDDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ELANGELBDDataSet3.xss">
+      <DependentUpon>ELANGELBDDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="ELANGELBDDataSet4.xsc">
+      <DependentUpon>ELANGELBDDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="ELANGELBDDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ELANGELBDDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ELANGELBDDataSet4.xss">
+      <DependentUpon>ELANGELBDDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="ELANGELBDDataSet5.xsc">
+      <DependentUpon>ELANGELBDDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="ELANGELBDDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ELANGELBDDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ELANGELBDDataSet5.xss">
+      <DependentUpon>ELANGELBDDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="ELANGELBDDataSet6.xsc">
+      <DependentUpon>ELANGELBDDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="ELANGELBDDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ELANGELBDDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ELANGELBDDataSet6.xss">
+      <DependentUpon>ELANGELBDDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="ELANGELBDDataSet7.xsc">
+      <DependentUpon>ELANGELBDDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="ELANGELBDDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ELANGELBDDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ELANGELBDDataSet7.xss">
+      <DependentUpon>ELANGELBDDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EntidaddeNegocioEN\EntidaddeNegocioEN.csproj">
+      <Project>{336aba7b-f446-4fa1-9450-440b540d0f12}</Project>
+      <Name>EntidaddeNegocioEN</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LogicadeNegocioBL\LogicadeNegocioBL.csproj">
+      <Project>{6e1339b8-7096-474c-afb9-3c8618c0bff0}</Project>
+      <Name>LogicadeNegocioBL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fondo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fondo2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fondo3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fondo4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fondo5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fondo6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mascota.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Especie.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cita.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Todos.jpeg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
