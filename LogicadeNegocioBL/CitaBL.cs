@@ -8,10 +8,11 @@ using System.Threading.Tasks;
 
 namespace LogicadeNegocioBL
 {
+    /// <summary>
+    /// / <para>Clase de lógica de negocio para manejar las operaciones relacionadas con las citas.</para>
+    /// </summary>
     public class CitaBL
     {
-        
-
         public List<CitaEN> MostrarCita()
         {
             return CitaDAL.MostrarCita();
@@ -30,7 +31,6 @@ namespace LogicadeNegocioBL
         {
             return CitaDAL.EliminarCita(pCitaEN);
         }
-
         public int ModificarCita(CitaEN pCitaEN)
         {
             return CitaDAL.ModificarCita(pCitaEN);
