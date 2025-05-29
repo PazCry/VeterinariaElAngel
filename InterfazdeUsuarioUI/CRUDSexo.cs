@@ -67,7 +67,6 @@ namespace InterfazdeUsuarioUI
             txtTipoSexo.Clear();
             CargarGrid();
         }
-
         private void txtId_KeyPress(object sender, KeyPressEventArgs e)
         {
             {
@@ -79,9 +78,7 @@ namespace InterfazdeUsuarioUI
                     e.Handled = true;
                 }
             }
-
         }
-
         private void txtTipoSexo_KeyPress(object sender, KeyPressEventArgs e)
         {
             // Permitir letras, tecla de control (como Backspace) y espacios
